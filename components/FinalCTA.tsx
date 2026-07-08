@@ -70,8 +70,8 @@ export default function FinalCTA() {
             </h2>
             <div className="keyline mt-6 w-24" />
             <p className="mt-6 max-w-md leading-relaxed text-muted">
-              Free, no-obligation quotes on every job, big or small, domestic
-              or commercial, anywhere in the North East.
+              Free quotes on every job, big or small, domestic or commercial,
+              anywhere in the North East.
             </p>
 
             <a
@@ -91,7 +91,7 @@ export default function FinalCTA() {
                   d="M6.6 3h2.2l1.4 4.2-1.8 1.4a13.4 13.4 0 0 0 6 6l1.4-1.8L20 14.2v2.2A2.6 2.6 0 0 1 17.4 19 14.9 14.9 0 0 1 5 6.6 2.6 2.6 0 0 1 6.6 3Z"
                 />
               </svg>
-              {site.phoneDisplay}
+              Call Nick
             </a>
 
             <div className="mt-10 space-y-3 text-sm text-muted">
@@ -106,7 +106,7 @@ export default function FinalCTA() {
               </p>
               <p className="flex items-center gap-3">
                 <PinIcon />
-                {site.base}, {site.region}, covering the North East
+                {site.base}, {site.region}, covering all over the North East
               </p>
             </div>
           </Reveal>
