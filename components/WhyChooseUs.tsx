@@ -15,7 +15,7 @@ export default function WhyChooseUs() {
         <div className="grid gap-16 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <SectionHeading
-              eyebrow="Why choose us"
+              eyebrow="Why choose Nick"
               title="A 9.99/10 rating isn't luck. It's how the work is done."
               intro="Every review below was independently verified by Checked & Vetted, either by phone call or confirmed electronically. Nobody scores 63 verified reports at 9.99 by cutting corners."
             />
