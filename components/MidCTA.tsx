@@ -33,7 +33,7 @@ export default function MidCTA() {
                   d="M6.6 3h2.2l1.4 4.2-1.8 1.4a13.4 13.4 0 0 0 6 6l1.4-1.8L20 14.2v2.2A2.6 2.6 0 0 1 17.4 19 14.9 14.9 0 0 1 5 6.6 2.6 2.6 0 0 1 6.6 3Z"
                 />
               </svg>
-              {site.phoneDisplay}
+              Call Nick
             </a>
           </div>
         </div>
