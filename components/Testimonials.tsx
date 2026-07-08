@@ -32,7 +32,7 @@ export default function Testimonials() {
         <SectionHeading
           eyebrow="Recent work & reviews"
           title="Real jobs. Real homes. Real reviews."
-          intro="A look at recent projects across the North East, alongside what the customers behind them said — every review independently verified by Checked & Vetted."
+          intro="A look at recent projects across the North East, alongside what the customers behind them said. Every review is independently verified by Checked & Vetted."
         />
       </div>
 

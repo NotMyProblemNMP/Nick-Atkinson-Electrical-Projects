@@ -49,7 +49,7 @@ export default function Hero() {
             Nick Atkinson Electrical Projects is a NAPIT-approved electrician
             based in {site.base}, covering Newcastle upon Tyne and the wider
             North East. Rewires, lighting design, EICR testing and smart home
-            installations — fully insured, guaranteed and certified.
+            installations, all fully insured, guaranteed and certified.
           </motion.p>
 
           <motion.div {...fade(0.35)} className="mt-9 flex flex-wrap gap-4">
@@ -70,7 +70,7 @@ export default function Hero() {
                   d="M6.6 3h2.2l1.4 4.2-1.8 1.4a13.4 13.4 0 0 0 6 6l1.4-1.8L20 14.2v2.2A2.6 2.6 0 0 1 17.4 19 14.9 14.9 0 0 1 5 6.6 2.6 2.6 0 0 1 6.6 3Z"
                 />
               </svg>
-              Call Nick — {site.phoneDisplay}
+              Call Nick on {site.phoneDisplay}
             </a>
             <a
               href="#contact"

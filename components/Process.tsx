@@ -12,7 +12,7 @@ export default function Process() {
       <SectionHeading
         eyebrow="How it works"
         title="Straightforward from first call to final certificate."
-        intro="No chasing, no surprises — a clear four-step process that keeps you informed at every stage."
+        intro="No chasing and no surprises, just a clear four-step process that keeps you informed at every stage."
       />
 
       <ol className="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">

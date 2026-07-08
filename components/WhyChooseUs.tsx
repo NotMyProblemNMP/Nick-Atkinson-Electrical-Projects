@@ -17,7 +17,7 @@ export default function WhyChooseUs() {
             <SectionHeading
               eyebrow="Why choose us"
               title="A 9.99/10 rating isn't luck. It's how the work is done."
-              intro="Every review below was independently verified by Checked & Vetted — spoken to by phone or confirmed electronically. Nobody scores 63 verified reports at 9.99 by cutting corners."
+              intro="Every review below was independently verified by Checked & Vetted, either by phone call or confirmed electronically. Nobody scores 63 verified reports at 9.99 by cutting corners."
             />
 
             <Reveal delay={0.15} className="mt-10">

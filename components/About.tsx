@@ -4,7 +4,7 @@ import Reveal from "./Reveal";
 
 const points = [
   "NAPIT approved and Checked & Vetted verified since 2020",
-  "Fully insured with AVIVA — £1,000,000 public liability cover",
+  "Fully insured with AVIVA: £1,000,000 public liability cover",
   "Registered limited company (No. 14644304)",
   "Free, no-obligation quotes with prices agreed up front",
 ];
@@ -43,7 +43,7 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-6 leading-relaxed text-muted">
-              Nick Atkinson runs every project personally — from the first
+              Nick Atkinson runs every project personally, from the first
               phone call to the final handover. Based in {site.base} and
               working across Newcastle upon Tyne, North Tyneside and
               Northumberland, he's built his reputation one job at a time:
@@ -52,7 +52,7 @@ export default function About() {
               than he found it.
             </p>
             <p className="mt-4 leading-relaxed text-muted">
-              Customers come back — some for over six years — because the work
+              Customers come back, some for over six years, because the work
               is done properly, certified properly, and guaranteed. Domestic or
               commercial, no job is too big or small.
             </p>

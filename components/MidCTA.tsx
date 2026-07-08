@@ -12,8 +12,8 @@ export default function MidCTA() {
                 Planning a project, or just need a fault fixing?
               </h2>
               <p className="mt-3 max-w-xl text-muted">
-                Speak directly to Nick for a free, no-obligation quote — clear
-                pricing agreed before any work begins.
+                Speak directly to Nick for a free, no-obligation quote, with
+                clear pricing agreed before any work begins.
               </p>
             </div>
             <a

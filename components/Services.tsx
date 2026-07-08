@@ -13,7 +13,7 @@ export default function Services() {
       <SectionHeading
         eyebrow="What we do"
         title="Every electrical project, from first fix to final certificate."
-        intro="Domestic and commercial work across the North East — no job too big or small, and every project carried through from start to completion."
+        intro="Domestic and commercial work across the North East. No job is too big or small, and every project is carried through from start to completion."
       />
 
       <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

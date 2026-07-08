@@ -70,7 +70,7 @@ export default function FinalCTA() {
             </h2>
             <div className="keyline mt-6 w-24" />
             <p className="mt-6 max-w-md leading-relaxed text-muted">
-              Free, no-obligation quotes on every job — big or small, domestic
+              Free, no-obligation quotes on every job, big or small, domestic
               or commercial, anywhere in the North East.
             </p>
 
@@ -106,7 +106,7 @@ export default function FinalCTA() {
               </p>
               <p className="flex items-center gap-3">
                 <PinIcon />
-                {site.base}, {site.region} — covering the North East
+                {site.base}, {site.region}, covering the North East
               </p>
             </div>
           </Reveal>
@@ -154,12 +154,13 @@ export default function FinalCTA() {
 
               {status === "sent" ? (
                 <p className="mt-4 text-center text-sm text-accent">
-                  Thanks — your enquiry has been sent. Nick will be in touch.
+                  Thank you. Your enquiry has been sent and Nick will be in
+                  touch.
                 </p>
               ) : null}
               {status === "error" ? (
                 <p className="mt-4 text-center text-sm text-red-400">
-                  Something went wrong — please call {site.phoneDisplay}{" "}
+                  Something went wrong. Please call {site.phoneDisplay}{" "}
                   instead.
                 </p>
               ) : null}

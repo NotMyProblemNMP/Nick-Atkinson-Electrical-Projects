@@ -10,7 +10,7 @@ export const services: Service[] = [
   {
     title: "Full & Partial Rewires",
     description:
-      "Complete house rewires, partial rewires and consumer unit upgrades — planned around your home, chased in cleanly and finished with full certification.",
+      "Complete house rewires, partial rewires and consumer unit upgrades, planned around your home, chased in cleanly and finished with full certification.",
     image: "/images/service-rewires.jpg",
     alt: "Room mid-renovation during a full house rewire in Newcastle",
     tags: ["House rewires", "Consumer units", "Surge protection"],
@@ -18,7 +18,7 @@ export const services: Service[] = [
   {
     title: "Lighting Design & Installation",
     description:
-      "Statement chandeliers, spotlights, LED features and accent lighting — designed and installed to transform how every room looks and feels.",
+      "Statement chandeliers, spotlights, LED features and accent lighting, designed and installed to transform how every room looks and feels.",
     image: "/images/service-lighting.jpg",
     alt: "Statement chandelier installed in a period living room with arched windows",
     tags: ["Feature lighting", "Spotlights", "LED design"],
@@ -26,7 +26,7 @@ export const services: Service[] = [
   {
     title: "Kitchen & Bathroom Electrics",
     description:
-      "Under-cabinet lighting, induction hob and appliance circuits, extractor fans, shaver points and illuminated mirrors — installed safely in wet zones.",
+      "Under-cabinet lighting, induction hob and appliance circuits, extractor fans, shaver points and illuminated mirrors, all installed safely in wet zones.",
     image: "/images/service-kitchen-bathroom.jpg",
     alt: "Induction hob and under-cabinet LED lighting in a modern kitchen",
     tags: ["Kitchen circuits", "Bathroom zones", "Mirrors & fans"],
@@ -34,7 +34,7 @@ export const services: Service[] = [
   {
     title: "Garden & Outdoor Lighting",
     description:
-      "Architectural garden lighting, patio and decking schemes, outdoor sockets and garden room power — built to withstand the North East weather.",
+      "Architectural garden lighting, patio and decking schemes, outdoor sockets and garden room power, built to withstand the North East weather.",
     image: "/images/service-garden.jpg",
     alt: "Architectural outdoor wall lighting on timber cladding at dusk",
     tags: ["Garden schemes", "Outdoor power", "Garden rooms"],
@@ -42,7 +42,7 @@ export const services: Service[] = [
   {
     title: "Inspection, Testing & Certification",
     description:
-      "EICR condition reports, landlord safety certificates and electrical compliance checks — carried out thoroughly and documented properly.",
+      "EICR condition reports, landlord safety certificates and electrical compliance checks, carried out thoroughly and documented properly.",
     image: "/images/service-testing.jpg",
     alt: "Freshly certified room with recessed downlights",
     tags: ["EICR reports", "Landlord certs", "Compliance"],
@@ -50,7 +50,7 @@ export const services: Service[] = [
   {
     title: "Smart Home, CCTV & Media Walls",
     description:
-      "Ring doorbells, CCTV systems, smart thermostats and backlit media walls — modern technology wired in properly, not plugged in as an afterthought.",
+      "Ring doorbells, CCTV systems, smart thermostats and backlit media walls. Modern technology wired in properly, not plugged in as an afterthought.",
     image: "/images/service-smart.jpg",
     alt: "Backlit media wall with recessed TV and LED accent lighting",
     tags: ["CCTV & doorbells", "Smart heating", "Media walls"],
@@ -106,7 +106,7 @@ export const moreReviews: Review[] = [
   },
   {
     quote:
-      "The work was carried out skilfully and cleanly — we were very pleased with the results. Some time later we had a flashing on some of the spotlights that were fitted. Nick came and changed them free of charge.",
+      "The work was carried out skilfully and cleanly and we were very pleased with the results. Some time later we had a flashing on some of the spotlights that were fitted. Nick came and changed them free of charge.",
     job: "Multiple jobs inside and outside the house",
     location: "Corbridge",
     date: "March 2026",
@@ -120,7 +120,7 @@ export const moreReviews: Review[] = [
   },
   {
     quote:
-      "Nick is very punctual, clean and respectful — prices are discussed before the job. I have no hesitation in recommending him to anyone.",
+      "Nick is very punctual, clean and respectful, and prices are discussed before the job. I have no hesitation in recommending him to anyone.",
     job: "Two years of work: hob, spotlights, sockets and switches",
     location: "Newcastle upon Tyne",
     date: "January 2026",
@@ -138,17 +138,17 @@ export const processSteps = [
   {
     title: "Get in touch",
     description:
-      "Call Nick directly or send a quick enquiry. You'll speak to the electrician doing the work — not a call centre.",
+      "Call Nick directly or send a quick enquiry. You'll speak to the electrician doing the work, not a call centre.",
   },
   {
     title: "Free, no-obligation quote",
     description:
-      "Nick visits, talks through what you want and quotes clearly — including cheaper options where they exist. The price is agreed before any work starts.",
+      "Nick visits, talks through what you want and quotes clearly, including cheaper options where they exist. The price is agreed before any work starts.",
   },
   {
     title: "The work, done properly",
     description:
-      "Turns up when arranged, keeps you informed throughout and treats your home with respect — every job carried out from start to completion.",
+      "Turns up when arranged, keeps you informed throughout and treats your home with respect, with every job carried out from start to completion.",
   },
   {
     title: "Handover & certification",

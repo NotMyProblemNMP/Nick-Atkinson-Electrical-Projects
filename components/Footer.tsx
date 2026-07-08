@@ -99,7 +99,7 @@ export default function Footer() {
             Built by
             <Image
               src="/images/nmp-mark-white.svg"
-              alt="NMP — Not My Problem"
+              alt="NMP (Not My Problem)"
               width={36}
               height={14}
               className="h-3.5 w-auto"
