@@ -96,7 +96,7 @@ export default function Hero() {
             className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-white/10 pt-8"
           >
             {[
-              { value: site.rating, label: "Average rating" },
+              { value: "100s", label: "Happy customers" },
               { value: site.reviewCountDisplay, label: "Verified reviews" },
               { value: "100%", label: "Customer satisfaction" },
             ].map((stat) => (
