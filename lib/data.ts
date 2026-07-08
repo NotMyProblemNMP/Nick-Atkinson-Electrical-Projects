@@ -8,28 +8,12 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    title: "Full & Partial Rewires",
-    description:
-      "Complete house rewires, partial rewires and consumer unit upgrades, planned around your home, chased in cleanly and finished with full certification.",
-    image: "/images/service-rewires.jpg",
-    alt: "Room mid-renovation during a full house rewire in Newcastle",
-    tags: ["House rewires", "Consumer units", "Surge protection"],
-  },
-  {
     title: "Lighting Design & Installation",
     description:
       "Statement chandeliers, spotlights, LED features and accent lighting, designed and installed to transform how every room looks and feels.",
     image: "/images/service-lighting.jpg",
     alt: "Statement chandelier installed in a period living room with arched windows",
     tags: ["Feature lighting", "Spotlights", "LED design"],
-  },
-  {
-    title: "Kitchen & Bathroom Electrics",
-    description:
-      "Under-cabinet lighting, induction hob and appliance circuits, extractor fans, shaver points and illuminated mirrors, all installed safely in wet zones.",
-    image: "/images/service-kitchen-bathroom.jpg",
-    alt: "Induction hob and under-cabinet LED lighting in a modern kitchen",
-    tags: ["Kitchen circuits", "Bathroom zones", "Mirrors & fans"],
   },
   {
     title: "Garden & Outdoor Lighting",
@@ -40,12 +24,12 @@ export const services: Service[] = [
     tags: ["Garden schemes", "Outdoor power", "Garden rooms"],
   },
   {
-    title: "Inspection, Testing & Certification",
+    title: "Kitchen & Bathroom Electrics",
     description:
-      "EICR condition reports, landlord safety certificates and electrical compliance checks, carried out thoroughly and documented properly.",
-    image: "/images/service-testing.jpg",
-    alt: "Freshly certified room with recessed downlights",
-    tags: ["EICR reports", "Landlord certs", "Compliance"],
+      "Under-cabinet lighting, induction hob and appliance circuits, extractor fans, shaver points and illuminated mirrors, all installed safely in wet zones.",
+    image: "/images/service-kitchen-bathroom.jpg",
+    alt: "Induction hob and under-cabinet LED lighting in a modern kitchen",
+    tags: ["Kitchen circuits", "Bathroom zones", "Mirrors & fans"],
   },
   {
     title: "Smart Home, CCTV & Media Walls",
@@ -54,6 +38,22 @@ export const services: Service[] = [
     image: "/images/service-smart.jpg",
     alt: "Backlit media wall with recessed TV and LED accent lighting",
     tags: ["CCTV & doorbells", "Smart heating", "Media walls"],
+  },
+  {
+    title: "Full & Partial Rewires",
+    description:
+      "Complete house rewires, partial rewires and consumer unit upgrades, planned around your home, chased in cleanly and finished with full certification.",
+    image: "/images/service-rewires.jpg",
+    alt: "Room mid-renovation during a full house rewire in Newcastle",
+    tags: ["House rewires", "Consumer units", "Surge protection"],
+  },
+  {
+    title: "Inspection, Testing & Certification",
+    description:
+      "EICR condition reports, landlord safety certificates and electrical compliance checks, carried out thoroughly and documented properly.",
+    image: "/images/service-testing.jpg",
+    alt: "Freshly certified room with recessed downlights",
+    tags: ["EICR reports", "Landlord certs", "Compliance"],
   },
 ];
 
