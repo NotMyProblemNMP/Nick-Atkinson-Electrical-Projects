@@ -44,7 +44,7 @@ export default function About() {
             <p className="mt-6 leading-relaxed text-muted">
               Nick runs every project personally, from the first phone call to
               the final handover. Based in {site.base} and working across
-              Newcastle upon Tyne, North Tyneside and Northumberland, he's
+              Newcastle upon Tyne, North Tyneside and Northumberland, he&rsquo;s
               built his reputation one job at a time: turning up when
               arranged, explaining all options (including the cheaper ones),
               and leaving every property clean and tidy.
