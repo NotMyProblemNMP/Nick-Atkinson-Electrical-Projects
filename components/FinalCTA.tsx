@@ -20,13 +20,14 @@ export default function FinalCTA() {
     const form = event.currentTarget;
     const data = new FormData(form);
     const name = String(data.get("name") ?? "");
+    const email = String(data.get("email") ?? "");
     const phone = String(data.get("phone") ?? "");
     const message = String(data.get("message") ?? "");
 
     if (!WEB3FORMS_KEY) {
       const subject = encodeURIComponent(`Enquiry from ${name} via website`);
       const body = encodeURIComponent(
-        `Name: ${name}\nPhone: ${phone}\n\n${message}`
+        `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\n${message}`
       );
       window.location.href = `mailto:${site.email}?subject=${subject}&body=${body}`;
       return;
@@ -41,6 +42,7 @@ export default function FinalCTA() {
           access_key: WEB3FORMS_KEY,
           subject: `Website enquiry from ${name}`,
           name,
+          email,
           phone,
           message,
         }),
@@ -117,7 +119,7 @@ export default function FinalCTA() {
               className="rounded-3xl border border-white/10 bg-surface p-8 transition-all duration-300 hover:border-accent/40 hover:shadow-[0_0_44px_rgba(245,185,66,0.14)] sm:p-10"
             >
               <h3 className="font-display text-xl font-semibold text-foreground">
-                Prefer to write? Send a brief enquiry.
+                Prefer to email? Send a brief enquiry.
               </h3>
               <p className="mt-2 text-sm text-muted">
                 A few details and Nick will get back to you.
@@ -125,6 +127,12 @@ export default function FinalCTA() {
 
               <div className="mt-7 space-y-5">
                 <Field label="Your name" name="name" type="text" required />
+                <Field
+                  label="Email address"
+                  name="email"
+                  type="email"
+                  required
+                />
                 <Field label="Phone number" name="phone" type="tel" required />
                 <div>
                   <label
