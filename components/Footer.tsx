@@ -94,7 +94,7 @@ export default function Footer() {
             href="https://notmyproblem.uk"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-baseline gap-2 opacity-70 transition-opacity hover:opacity-100"
+            className="group flex items-baseline gap-1.5 opacity-70 transition-opacity hover:opacity-100"
           >
             Built by
             {/* The mark's baseline sits ~72% down the SVG (the rest is the
