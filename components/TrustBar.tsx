@@ -12,11 +12,11 @@ export default function TrustBar() {
   return (
     <div className="border-y border-white/10 bg-surface">
       <Reveal y={12}>
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-10 gap-y-3 px-5 py-6 sm:px-8">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-10 gap-y-3 px-5 py-6 sm:px-8 lg:flex-nowrap lg:justify-between lg:gap-x-6">
           {badges.map((badge) => (
             <span
               key={badge}
-              className="flex items-center gap-2.5 text-xs font-medium uppercase tracking-[0.18em] text-muted"
+              className="flex items-center gap-2.5 whitespace-nowrap text-xs font-medium uppercase tracking-[0.18em] text-muted"
             >
               <svg
                 viewBox="0 0 24 24"
