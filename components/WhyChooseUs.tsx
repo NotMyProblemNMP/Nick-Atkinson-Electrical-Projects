@@ -17,7 +17,7 @@ export default function WhyChooseUs() {
             <SectionHeading
               eyebrow="Why choose Nick"
               title="Don't just take my word for it."
-              intro="Every review below was independently verified by Checked & Vetted, either by phone call or confirmed electronically. Nobody scores 63 verified reports at 9.99 by cutting corners."
+              intro="Hear from other happy customers around the North East. All reviews and customer satisfaction scores independently verified by Checked and Vetted."
             />
 
             <Reveal delay={0.15} className="mt-10">
