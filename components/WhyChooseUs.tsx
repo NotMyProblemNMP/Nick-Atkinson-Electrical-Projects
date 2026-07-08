@@ -16,7 +16,7 @@ export default function WhyChooseUs() {
           <div>
             <SectionHeading
               eyebrow="Why choose Nick"
-              title="A 9.99/10 rating isn't luck. It's how the work is done."
+              title="Don't just take my word for it."
               intro="Every review below was independently verified by Checked & Vetted, either by phone call or confirmed electronically. Nobody scores 63 verified reports at 9.99 by cutting corners."
             />
 
