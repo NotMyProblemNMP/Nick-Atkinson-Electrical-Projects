@@ -36,7 +36,7 @@ export default function About() {
               About Nick
             </p>
             <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-              The electrician your neighbours already recommend.
+              The electrician your neighbours recommend.
             </h2>
             <div className="keyline mt-6 w-24" />
           </Reveal>
