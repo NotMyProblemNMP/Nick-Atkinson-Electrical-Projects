@@ -114,7 +114,7 @@ export default function FinalCTA() {
           <Reveal delay={0.15}>
             <form
               onSubmit={handleSubmit}
-              className="rounded-3xl border border-white/10 bg-surface p-8 sm:p-10"
+              className="rounded-3xl border border-white/10 bg-surface p-8 transition-all duration-300 hover:border-accent/40 hover:shadow-[0_0_44px_rgba(245,185,66,0.14)] sm:p-10"
             >
               <h3 className="font-display text-xl font-semibold text-foreground">
                 Prefer to write? Send a brief enquiry.
