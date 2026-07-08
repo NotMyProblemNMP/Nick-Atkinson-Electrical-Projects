@@ -18,12 +18,11 @@ const workPhotos = [
 ];
 
 export default function Testimonials() {
-  // Interleave photos and quotes into one marquee strip, duplicated for a
-  // seamless loop.
-  const strip = workPhotos.map((photo, i) => ({
-    photo,
-    review: moreReviews[i % moreReviews.length],
-    showReview: i < moreReviews.length,
+  // Strictly alternate photo → review in the marquee strip (duplicated for a
+  // seamless loop), pairing each review with one photo.
+  const strip = moreReviews.map((review, i) => ({
+    photo: workPhotos[i % workPhotos.length],
+    review,
   }));
 
   return (
@@ -58,22 +57,20 @@ export default function Testimonials() {
                         className="object-cover"
                       />
                     </div>
-                    {item.showReview ? (
-                      <figure className="flex h-72 w-80 shrink-0 flex-col justify-between rounded-2xl border border-white/10 bg-surface p-6">
-                        <blockquote className="text-sm leading-relaxed text-foreground/90">
-                          &ldquo;{truncate(item.review.quote, 200)}&rdquo;
-                        </blockquote>
-                        <figcaption className="mt-4 border-t border-white/10 pt-4">
-                          <p className="text-xs font-medium text-foreground">
-                            {item.review.job}
-                          </p>
-                          <p className="mt-1 text-xs text-muted">
-                            {item.review.location} · {item.review.date} ·{" "}
-                            <span className="text-accent">10/10</span>
-                          </p>
-                        </figcaption>
-                      </figure>
-                    ) : null}
+                    <figure className="flex h-72 w-80 shrink-0 flex-col justify-between rounded-2xl border border-white/10 bg-surface p-6">
+                      <blockquote className="text-sm leading-relaxed text-foreground/90">
+                        &ldquo;{truncate(item.review.quote, 200)}&rdquo;
+                      </blockquote>
+                      <figcaption className="mt-4 border-t border-white/10 pt-4">
+                        <p className="text-xs font-medium text-foreground">
+                          {item.review.job}
+                        </p>
+                        <p className="mt-1 text-xs text-muted">
+                          {item.review.location} · {item.review.date} ·{" "}
+                          <span className="text-accent">10/10</span>
+                        </p>
+                      </figcaption>
+                    </figure>
                   </div>
                 ))}
               </div>
@@ -89,7 +86,8 @@ export default function Testimonials() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-sm font-semibold text-accent transition-colors hover:text-accent-strong"
         >
-          Read all {site.reviewCount} verified reviews on Checked &amp; Vetted
+          Read all {site.reviewCount}{" "}verified reviews on Checked &amp;
+          Vetted
           <svg
             viewBox="0 0 24 24"
             fill="none"

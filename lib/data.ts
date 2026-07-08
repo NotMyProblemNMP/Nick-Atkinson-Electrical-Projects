@@ -132,6 +132,13 @@ export const moreReviews: Review[] = [
     location: "Newcastle",
     date: "January 2026",
   },
+  {
+    quote:
+      "Work carried out as requested. Nice friendly person to deal with and keeps in touch. Highly recommended.",
+    job: "Moving, replacing and adding sockets and switches",
+    location: "Whitley Bay",
+    date: "January 2026",
+  },
 ];
 
 export const processSteps = [
