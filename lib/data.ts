@@ -151,7 +151,7 @@ export const processSteps = [
       "Call Nick directly or send a quick enquiry. You'll speak to the electrician doing the work, not a call centre.",
   },
   {
-    title: "Free, no-obligation quote",
+    title: "Free quote",
     description:
       "Nick visits, talks through what you want and quotes clearly, including cheaper options where they exist. The price is agreed before any work starts.",
   },
