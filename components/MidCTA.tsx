@@ -5,7 +5,7 @@ export default function MidCTA() {
   return (
     <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
       <Reveal>
-        <div className="relative overflow-hidden rounded-3xl border border-accent/20 bg-[radial-gradient(ellipse_at_top_left,rgba(245,185,66,0.12),transparent_60%)] px-8 py-12 sm:px-12">
+        <div className="relative overflow-hidden rounded-3xl border border-accent/20 bg-[radial-gradient(ellipse_at_top_left,rgba(245,185,66,0.12),transparent_60%)] px-8 py-12 transition-all duration-300 hover:border-accent/40 hover:shadow-[0_0_44px_rgba(245,185,66,0.14)] sm:px-12">
           <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
             <div>
               <h2 className="font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
