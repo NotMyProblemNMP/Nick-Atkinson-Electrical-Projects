@@ -4,10 +4,13 @@ import { useState, type FormEvent } from "react";
 import { site } from "@/lib/site";
 import Reveal from "./Reveal";
 
-// Optional: create a free access key at https://web3forms.com, point it at
-// Nick's inbox and set NEXT_PUBLIC_WEB3FORMS_KEY in Vercel. Without a key the
-// form falls back to opening the visitor's email app with the enquiry
-// pre-filled.
+// The form sends in the background, with no email client involved.
+// Delivery service, in order of preference:
+// 1. Web3Forms, when NEXT_PUBLIC_WEB3FORMS_KEY is set in Vercel
+//    (create a free key at https://web3forms.com pointed at Nick's inbox).
+// 2. FormSubmit (https://formsubmit.co), keyless: it emails site.email
+//    directly. The first submission triggers a one-click activation email
+//    to that address.
 const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
 
 type Status = "idle" | "sending" | "sent" | "error";
@@ -24,29 +27,38 @@ export default function FinalCTA() {
     const phone = String(data.get("phone") ?? "");
     const message = String(data.get("message") ?? "");
 
-    if (!WEB3FORMS_KEY) {
-      const subject = encodeURIComponent(`Enquiry from ${name} via website`);
-      const body = encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\n${message}`
-      );
-      window.location.href = `mailto:${site.email}?subject=${subject}&body=${body}`;
-      return;
-    }
-
     setStatus("sending");
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({
-          access_key: WEB3FORMS_KEY,
-          subject: `Website enquiry from ${name}`,
-          name,
-          email,
-          phone,
-          message,
-        }),
-      });
+      const res = WEB3FORMS_KEY
+        ? await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify({
+              access_key: WEB3FORMS_KEY,
+              subject: `Website enquiry from ${name}`,
+              name,
+              email,
+              phone,
+              message,
+            }),
+          })
+        : await fetch(`https://formsubmit.co/ajax/${site.email}`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify({
+              _subject: `Website enquiry from ${name}`,
+              name,
+              email,
+              phone,
+              message,
+            }),
+          });
       if (!res.ok) throw new Error(String(res.status));
       setStatus("sent");
       form.reset();
@@ -114,6 +126,39 @@ export default function FinalCTA() {
           </Reveal>
 
           <Reveal delay={0.15}>
+            {status === "sent" ? (
+              <div className="flex min-h-[28rem] flex-col items-center justify-center rounded-3xl border border-accent/40 bg-surface p-8 text-center shadow-[0_0_44px_rgba(245,185,66,0.14)] sm:p-10">
+                <span className="flex h-16 w-16 items-center justify-center rounded-full bg-accent/15">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.2"
+                    className="h-8 w-8 text-accent"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="m5 13 4 4L19 7"
+                    />
+                  </svg>
+                </span>
+                <h3 className="mt-6 font-display text-2xl font-semibold text-foreground">
+                  Enquiry sent!
+                </h3>
+                <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted">
+                  Thank you. Your enquiry is on its way and Nick will be in
+                  touch soon.
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setStatus("idle")}
+                  className="mt-8 text-sm font-semibold text-accent transition-colors hover:text-accent-strong"
+                >
+                  Send another enquiry
+                </button>
+              </div>
+            ) : (
             <form
               onSubmit={handleSubmit}
               className="rounded-3xl border border-white/10 bg-surface p-8 transition-all duration-300 hover:border-accent/40 hover:shadow-[0_0_44px_rgba(245,185,66,0.14)] sm:p-10"
@@ -160,12 +205,6 @@ export default function FinalCTA() {
                 {status === "sending" ? "Sending…" : "Send enquiry"}
               </button>
 
-              {status === "sent" ? (
-                <p className="mt-4 text-center text-sm text-accent">
-                  Thank you. Your enquiry has been sent and Nick will be in
-                  touch.
-                </p>
-              ) : null}
               {status === "error" ? (
                 <p className="mt-4 text-center text-sm text-red-400">
                   Something went wrong. Please call {site.phoneDisplay}{" "}
@@ -173,6 +212,7 @@ export default function FinalCTA() {
                 </p>
               ) : null}
             </form>
+            )}
           </Reveal>
         </div>
       </div>

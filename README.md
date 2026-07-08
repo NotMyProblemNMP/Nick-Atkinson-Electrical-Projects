@@ -20,14 +20,18 @@ All contact details live in one file: [`lib/site.ts`](lib/site.ts)
 
 ## Enquiry form
 
-The final-CTA form works two ways:
+The form submits in the background (no email client opens) and shows an
+"Enquiry sent" confirmation in place of the form. Delivery works two ways:
 
-- **No setup (default):** submitting opens the visitor's email app with the
-  enquiry pre-filled, addressed to `site.email`.
-- **Recommended:** create a free access key at [web3forms.com](https://web3forms.com)
-  pointed at Nick's inbox, then set the environment variable
+- **Default (keyless):** submissions post to
+  [FormSubmit](https://formsubmit.co), which emails them to `site.email`.
+  After the real email is set in `lib/site.ts`, the **first submission
+  triggers a one-click activation email** to that inbox — click it once and
+  all future enquiries deliver automatically.
+- **Alternative:** create a free access key at
+  [web3forms.com](https://web3forms.com) pointed at Nick's inbox and set
   `NEXT_PUBLIC_WEB3FORMS_KEY` in Vercel → Project → Settings → Environment
-  Variables. The form then sends directly from the page.
+  Variables. When the key is present the form uses Web3Forms instead.
 
 ## Local development
 
