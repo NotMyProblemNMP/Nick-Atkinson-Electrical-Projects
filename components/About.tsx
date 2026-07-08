@@ -15,10 +15,10 @@ export default function About() {
         <Reveal className="relative mx-auto w-full max-w-sm lg:max-w-none">
           <div className="overflow-hidden rounded-3xl border border-white/10">
             <Image
-              src="/images/about-van.jpg"
+              src="/images/about-vans.jpg"
               alt="Nick Atkinson Electrical Projects van on site in the North East"
               width={444}
-              height={783}
+              height={510}
               className="h-auto w-full object-cover"
             />
           </div>
