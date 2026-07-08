@@ -95,7 +95,7 @@ export default function Hero() {
           >
             {[
               { value: site.rating, label: "Average rating" },
-              { value: String(site.reviewCount), label: "Verified reviews" },
+              { value: site.reviewCountDisplay, label: "Verified reviews" },
               { value: "£1m", label: "AVIVA insured" },
             ].map((stat) => (
               <div key={stat.label}>
@@ -168,7 +168,7 @@ export default function Hero() {
                 <span className="text-sm text-muted"> / 10</span>
               </p>
               <p className="text-[0.65rem] uppercase tracking-[0.15em] text-muted">
-                {site.reviewCount} verified reviews
+                {site.reviewCountDisplay} verified reviews
               </p>
             </motion.div>
           </motion.div>

@@ -12,6 +12,7 @@ export const site = {
   region: "Tyne and Wear",
   rating: "9.99",
   reviewCount: 63,
+  reviewCountDisplay: "60+",
   companyNumber: "14644304",
   checkedAndVettedUrl:
     "https://checkedandvetted.com/NickAtkinsonElectricalProjects/",
