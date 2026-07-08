@@ -43,17 +43,16 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-6 leading-relaxed text-muted">
-              Nick Atkinson runs every project personally, from the first
-              phone call to the final handover. Based in {site.base} and
-              working across Newcastle upon Tyne, North Tyneside and
-              Northumberland, he's built his reputation one job at a time:
-              turning up when arranged, explaining the options honestly
-              (including the cheaper ones), and leaving every home cleaner
-              than he found it.
+              Nick runs every project personally, from the first phone call to
+              the final handover. Based in {site.base} and working across
+              Newcastle upon Tyne, North Tyneside and Northumberland, he's
+              built his reputation one job at a time: turning up when
+              arranged, explaining all options (including the cheaper ones),
+              and leaving every property clean and tidy.
             </p>
             <p className="mt-4 leading-relaxed text-muted">
-              Customers come back, some for over six years, because the work
-              is done properly, certified properly, and guaranteed. Domestic or
+              Customers keep coming back, some for over six years, because the
+              work is done properly, certified and guaranteed. Domestic or
               commercial, no job is too big or small.
             </p>
           </Reveal>
