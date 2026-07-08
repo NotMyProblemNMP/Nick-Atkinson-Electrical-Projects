@@ -71,7 +71,7 @@ export default function Footer() {
               </li>
             </ul>
             <div className="mt-6 flex flex-wrap gap-2">
-              {["NAPIT Approved", "Checked & Vetted", "AVIVA Insured"].map(
+              {["NAPIT Approved", "AVIVA Insured"].map(
                 (badge) => (
                   <span
                     key={badge}
