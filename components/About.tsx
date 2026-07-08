@@ -5,7 +5,6 @@ import Reveal from "./Reveal";
 const points = [
   "NAPIT approved and Checked & Vetted verified since 2020",
   "Fully insured with AVIVA: £1,000,000 public liability cover",
-  "Registered limited company (No. 14644304)",
   "Free, no-obligation quotes with prices agreed up front",
 ];
 
