@@ -18,7 +18,7 @@ export default function MidCTA() {
             </div>
             <a
               href={`tel:${site.phone}`}
-              className="inline-flex shrink-0 items-center gap-3 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-background transition-all hover:shadow-[0_0_32px_rgba(245,185,66,0.35)] lg:border lg:border-accent/50 lg:bg-transparent lg:text-accent lg:hover:bg-accent lg:hover:text-background"
+              className="inline-flex shrink-0 items-center gap-3 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-background transition-all hover:bg-accent-strong hover:shadow-[0_0_32px_rgba(245,185,66,0.35)]"
             >
               <svg
                 viewBox="0 0 24 24"
