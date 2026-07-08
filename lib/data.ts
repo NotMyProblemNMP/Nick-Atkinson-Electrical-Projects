@@ -4,6 +4,8 @@ export type Service = {
   image: string;
   alt: string;
   tags: string[];
+  /** Optional object-position override for how the photo is cropped. */
+  imagePosition?: string;
 };
 
 export const services: Service[] = [
@@ -14,6 +16,7 @@ export const services: Service[] = [
     image: "/images/service-lighting.jpg",
     alt: "Statement chandelier installed in a period living room with arched windows",
     tags: ["Feature lighting", "Spotlights", "LED design"],
+    imagePosition: "center 30%",
   },
   {
     title: "Garden & Outdoor Lighting",
