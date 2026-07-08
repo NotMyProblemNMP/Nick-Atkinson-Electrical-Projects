@@ -96,7 +96,7 @@ export default function Hero() {
             {[
               { value: site.rating, label: "Average rating" },
               { value: site.reviewCountDisplay, label: "Verified reviews" },
-              { value: "£1m", label: "AVIVA insured" },
+              { value: "100%", label: "Customer satisfaction" },
             ].map((stat) => (
               <div key={stat.label}>
                 <dt className="sr-only">{stat.label}</dt>
