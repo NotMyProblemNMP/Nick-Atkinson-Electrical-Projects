@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { moreReviews } from "@/lib/data";
-import { site } from "@/lib/site";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 
@@ -79,26 +78,6 @@ export default function Testimonials() {
         </div>
       </Reveal>
 
-      <Reveal delay={0.2} className="mt-12 text-center">
-        <a
-          href={`${site.checkedAndVettedUrl}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-accent transition-colors hover:text-accent-strong"
-        >
-          Read all {site.reviewCount}{" "}verified reviews on Checked &amp;
-          Vetted
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.8"
-            className="h-4 w-4"
-          >
-            <path strokeLinecap="round" d="M7 17 17 7m0 0H8m9 0v9" />
-          </svg>
-        </a>
-      </Reveal>
     </section>
   );
 }
