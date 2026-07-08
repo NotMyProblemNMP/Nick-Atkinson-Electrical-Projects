@@ -47,6 +47,12 @@ body {
   animation: marquee 60s linear infinite;
 }
 
+/* Pause the strip while the cursor is over it. Must live here (unlayered)
+   so it outranks the .marquee shorthand above. */
+.group:hover .marquee {
+  animation-play-state: paused;
+}
+
 @keyframes marquee {
   from {
     transform: translateX(0);
