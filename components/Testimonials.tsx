@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 import { moreReviews } from "@/lib/data";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
@@ -17,6 +20,9 @@ const workPhotos = [
 ];
 
 export default function Testimonials() {
+  // Touch devices have no hover, so pause the strip while a finger is on it.
+  const [touchPaused, setTouchPaused] = useState(false);
+
   // Strictly alternate photo → review in the marquee strip (duplicated for a
   // seamless loop), pairing each review with one photo.
   const strip = moreReviews.map((review, i) => ({
@@ -35,7 +41,12 @@ export default function Testimonials() {
       </div>
 
       <Reveal delay={0.15} className="mt-14">
-        <div className="group relative">
+        <div
+          className={`group relative ${touchPaused ? "marquee-paused" : ""}`}
+          onTouchStart={() => setTouchPaused(true)}
+          onTouchEnd={() => setTouchPaused(false)}
+          onTouchCancel={() => setTouchPaused(false)}
+        >
           <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-background to-transparent" />
           <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-background to-transparent" />
           <div className="marquee flex w-max gap-6">

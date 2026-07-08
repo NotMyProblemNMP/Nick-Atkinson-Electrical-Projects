@@ -47,9 +47,11 @@ body {
   animation: marquee 60s linear infinite;
 }
 
-/* Pause the strip while the cursor is over it. Must live here (unlayered)
+/* Pause the strip while the cursor is over it, or while a finger is on it
+   (.marquee-paused is toggled by touch handlers). Must live here (unlayered)
    so it outranks the .marquee shorthand above. */
-.group:hover .marquee {
+.group:hover .marquee,
+.marquee-paused .marquee {
   animation-play-state: paused;
 }
 
