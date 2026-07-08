@@ -94,15 +94,17 @@ export default function Footer() {
             href="https://notmyproblem.uk"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center gap-2 opacity-70 transition-opacity hover:opacity-100"
+            className="group flex items-baseline gap-2 opacity-70 transition-opacity hover:opacity-100"
           >
             Built by
+            {/* The mark's baseline sits ~72% down the SVG (the rest is the
+                p descender), so shift it down to sit on the text baseline. */}
             <Image
               src="/images/nmp-mark-white.svg"
               alt="NMP (Not My Problem)"
               width={36}
               height={14}
-              className="h-3.5 w-auto"
+              className="h-3.5 w-auto translate-y-[4px]"
             />
           </a>
         </div>
