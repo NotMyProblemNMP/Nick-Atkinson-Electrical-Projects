@@ -93,7 +93,7 @@ export default function WhyChooseUs() {
                     ))}
                   </span>
                   <span className="rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.15em] text-accent">
-                    10/10 Verified
+                    10/10 Rating
                   </span>
                 </div>
                 <p className="mt-5 text-[0.95rem] leading-relaxed text-foreground/90">
