@@ -11,7 +11,7 @@ export default function Process() {
     <section id="process" className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:py-32">
       <SectionHeading
         eyebrow="How it works"
-        title="Straightforward from first call to final certificate."
+        title="What to expect when you work with Nick."
         intro="No chasing and no surprises, just a clear four-step process that keeps you informed at every stage."
       />
 
