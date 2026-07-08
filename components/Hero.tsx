@@ -114,7 +114,7 @@ export default function Hero() {
         </div>
 
         {/* Layered photo composition */}
-        <div className="relative mx-auto hidden w-full max-w-md sm:block lg:max-w-none">
+        <div className="relative mx-auto w-full max-w-md lg:max-w-none">
           <motion.div
             initial={reduce ? undefined : { opacity: 0, scale: 0.94 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -135,7 +135,7 @@ export default function Hero() {
               initial={reduce ? undefined : { opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.55, ease }}
-              className="absolute -bottom-10 -left-8 w-56 overflow-hidden rounded-2xl border border-white/10 shadow-2xl shadow-black/60 lg:w-64"
+              className="absolute -bottom-10 -left-4 w-44 overflow-hidden rounded-2xl border border-white/10 shadow-2xl shadow-black/60 sm:-left-8 sm:w-56 lg:w-64"
             >
               <Image
                 src="/images/hero-kitchen.jpg"
