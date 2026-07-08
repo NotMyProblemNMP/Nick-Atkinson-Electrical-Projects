@@ -61,3 +61,31 @@ body {
     animation: none;
   }
 }
+
+/* Amber glow that travels through the numbered process steps in sequence.
+   Each step sets an animation-delay of index * 2s over an 8s loop. */
+.step-glow {
+  animation: step-glow 8s ease-in-out infinite;
+}
+
+@keyframes step-glow {
+  0%,
+  25%,
+  100% {
+    box-shadow: 0 0 0 rgba(245, 185, 66, 0);
+    border-color: rgba(245, 185, 66, 0.4);
+    background-color: var(--surface);
+  }
+  8%,
+  17% {
+    box-shadow: 0 0 28px rgba(245, 185, 66, 0.5);
+    border-color: var(--accent);
+    background-color: rgba(245, 185, 66, 0.14);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .step-glow {
+    animation: none;
+  }
+}

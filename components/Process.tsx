@@ -36,7 +36,10 @@ export default function Process() {
                 className="absolute left-14 right-0 top-6 hidden h-px bg-gradient-to-r from-accent/40 to-white/5 lg:block"
               />
             ) : null}
-            <span className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-accent/40 bg-surface font-display text-lg font-semibold text-accent">
+            <span
+              className="step-glow relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-accent/40 bg-surface font-display text-lg font-semibold text-accent"
+              style={{ animationDelay: `${i * 2}s` }}
+            >
               {i + 1}
             </span>
             <h3 className="mt-6 font-display text-lg font-semibold text-foreground">
