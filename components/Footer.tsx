@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { site } from "@/lib/site";
 
 export default function Footer() {
@@ -89,7 +90,21 @@ export default function Footer() {
             © {new Date().getFullYear()} {site.legalName}. Registered company
             No. {site.companyNumber}.
           </p>
-          <p>Fully insured &amp; guaranteed electrical work.</p>
+          <a
+            href="https://notmyproblem.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-2 opacity-70 transition-opacity hover:opacity-100"
+          >
+            Built by
+            <Image
+              src="/images/nmp-mark-white.svg"
+              alt="NMP — Not My Problem"
+              width={36}
+              height={14}
+              className="h-3.5 w-auto"
+            />
+          </a>
         </div>
       </div>
     </footer>
