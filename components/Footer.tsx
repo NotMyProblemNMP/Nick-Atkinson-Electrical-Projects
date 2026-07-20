@@ -90,7 +90,7 @@ export default function Footer() {
             © {new Date().getFullYear()} {site.legalName}.
           </p>
           <a
-            href="https://notmyproblem.uk"
+            href="https://www.notmyproblem.uk/web-design"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-baseline gap-1.5 opacity-70 transition-opacity hover:opacity-100"
