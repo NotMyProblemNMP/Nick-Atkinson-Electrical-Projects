@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     type: "website",
     url: site.url,
     siteName: site.name,
-    title: `${site.name} | Electrician in Newcastle upon Tyne`,
+    title: `${site.name} | Electrical Services Newcastle upon Tyne`,
     description,
     locale: "en_GB",
     images: [
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} | Electrician in Newcastle upon Tyne`,
+    title: `${site.name} | Electrical Services Newcastle upon Tyne`,
     description,
   },
   robots: {
