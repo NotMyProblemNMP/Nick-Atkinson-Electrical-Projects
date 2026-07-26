@@ -45,10 +45,10 @@ export const metadata: Metadata = {
     locale: "en_GB",
     images: [
       {
-        url: "/images/hero-garden.jpg",
-        width: 600,
-        height: 450,
-        alt: "Garden lighting installation by Nick Atkinson Electrical Projects",
+        url: "/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Nick Atkinson Electrical Projects: electrical services across Newcastle upon Tyne, rated 9.99/10 from 60+ verified reviews",
       },
     ],
   },
