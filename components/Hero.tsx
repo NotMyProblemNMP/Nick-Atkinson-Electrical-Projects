@@ -32,7 +32,7 @@ export default function Hero() {
             {...fade(0.1)}
             className="font-display text-4xl font-semibold leading-[1.06] tracking-tight text-foreground sm:text-5xl lg:text-6xl"
           >
-            Premium electrical work for North East homes &amp; businesses.
+            Electrical services across Newcastle upon Tyne.
           </motion.h1>
 
           <motion.p
