@@ -28,16 +28,9 @@ export default function Hero() {
 
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 pb-20 pt-32 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:pb-28 lg:pt-44">
         <div>
-          <motion.div {...fade(0.05)}>
-            <span className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-              <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-              Rated {site.rating}/10 on Checked &amp; Vetted
-            </span>
-          </motion.div>
-
           <motion.h1
-            {...fade(0.15)}
-            className="mt-7 font-display text-4xl font-semibold leading-[1.06] tracking-tight text-foreground sm:text-5xl lg:text-6xl"
+            {...fade(0.1)}
+            className="font-display text-4xl font-semibold leading-[1.06] tracking-tight text-foreground sm:text-5xl lg:text-6xl"
           >
             Premium electrical work for North East homes &amp; businesses.
           </motion.h1>
