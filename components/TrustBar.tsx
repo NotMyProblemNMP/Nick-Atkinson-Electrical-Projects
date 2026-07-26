@@ -2,7 +2,7 @@ import Reveal from "./Reveal";
 
 const badges = [
   "NAPIT Approved",
-  "AVIVA Insured to £1,000,000",
+  "AVIVA Insured to £5,000,000",
   "Free No-Obligation Quotes",
   "Domestic & Commercial",
   "Fully Certified Work",
