@@ -4,7 +4,9 @@
 export const site = {
   name: "Nick Atkinson Electrical Projects",
   legalName: "Nick Atkinson Electrical Projects Limited",
-  url: "https://nickatkinsonelectricalprojects.co.uk",
+  // Swap for the real domain (e.g. https://nickatkinsonelectricalprojects.co.uk)
+  // once it is registered and added in Vercel.
+  url: "https://nick-atkinson-electrical-projects.vercel.app",
   phone: "+447000000000", // placeholder
   phoneDisplay: "07000 000000", // placeholder
   email: "hello@nickatkinsonelectricalprojects.co.uk", // placeholder

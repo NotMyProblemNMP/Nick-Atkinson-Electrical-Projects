@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     type: "website",
     url: site.url,
     siteName: site.name,
-    title: `${site.name} | Premium Electrical Services, North East England`,
+    title: `${site.name} | Electrician in Newcastle upon Tyne`,
     description,
     locale: "en_GB",
     images: [
