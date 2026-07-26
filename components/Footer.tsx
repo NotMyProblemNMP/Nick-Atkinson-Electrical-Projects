@@ -15,9 +15,9 @@ export default function Footer() {
               className="h-9 w-auto"
             />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted">
-              NAPIT-approved electrician in {site.base}, delivering premium
-              domestic and commercial electrical projects across Tyne and
-              Wear and the North East of England.
+              NAPIT-approved electrician in {site.base}, delivering domestic
+              and commercial electrical projects across Tyne and Wear and the
+              North East of England.
             </p>
           </div>
 
