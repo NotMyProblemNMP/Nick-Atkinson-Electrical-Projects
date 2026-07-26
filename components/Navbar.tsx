@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { site } from "@/lib/site";
 
@@ -31,18 +32,15 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 sm:px-8">
-        <a href="#top" className="flex items-center gap-3">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent text-background">
-            <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
-              <path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2Z" />
-            </svg>
-          </span>
-          <span className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-foreground">
-            Nick Atkinson
-            <span className="block text-[0.65rem] font-medium tracking-[0.3em] text-muted">
-              Electrical Projects
-            </span>
-          </span>
+        <a href="#top" className="flex items-center">
+          <Image
+            src="/images/logo.png"
+            alt="Nick Atkinson Electrical Projects"
+            width={760}
+            height={172}
+            priority
+            className="h-8 w-auto sm:h-9"
+          />
         </a>
 
         <div className="hidden items-center gap-8 lg:flex">
