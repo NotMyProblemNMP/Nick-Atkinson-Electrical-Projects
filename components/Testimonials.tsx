@@ -32,7 +32,7 @@ export default function Testimonials() {
 
   return (
     <section id="reviews" className="overflow-hidden py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-5 sm:px-8">
+      <div className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-10">
         <SectionHeading
           eyebrow="Recent work & reviews"
           title="Real jobs. Real homes. Real reviews."

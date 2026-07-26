@@ -12,11 +12,11 @@ export default function SectionHeading({
   intro,
 }: SectionHeadingProps) {
   return (
-    <Reveal className="max-w-2xl">
+    <Reveal className="max-w-3xl">
       <p className="text-sm font-semibold uppercase tracking-[0.25em] text-accent">
         {eyebrow}
       </p>
-      <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
+      <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-[clamp(2.75rem,3.2vw,3.75rem)] lg:leading-[1.1]">
         {title}
       </h2>
       <div className="keyline mt-6 w-24" />

@@ -31,7 +31,7 @@ export default function Navbar() {
           : "border-b border-transparent bg-transparent"
       }`}
     >
-      <nav className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 sm:px-8">
+      <nav className="mx-auto flex h-18 max-w-[1400px] items-center justify-between px-5 sm:px-8 lg:px-10">
         <a href="#top" className="flex items-center">
           <Image
             src="/images/logo.png"
@@ -89,7 +89,7 @@ export default function Navbar() {
 
       {open ? (
         <div className="border-t border-white/10 bg-background/95 backdrop-blur-xl lg:hidden">
-          <div className="mx-auto flex max-w-7xl flex-col gap-1 px-5 py-4">
+          <div className="mx-auto flex max-w-[1400px] flex-col gap-1 px-5 py-4">
             {links.map((link) => (
               <a
                 key={link.href}

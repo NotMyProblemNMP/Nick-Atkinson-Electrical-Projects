@@ -73,13 +73,13 @@ export default function FinalCTA() {
         aria-hidden
         className="pointer-events-none absolute -bottom-48 left-1/2 h-[32rem] w-[56rem] -translate-x-1/2 rounded-full bg-accent/10 blur-[140px]"
       />
-      <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:py-32">
+      <div className="mx-auto max-w-[1400px] px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
         <div className="grid gap-14 lg:grid-cols-2 lg:gap-20">
           <Reveal>
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-accent">
               Get in touch
             </p>
-            <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
+            <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-[clamp(2.75rem,3.2vw,3.75rem)] lg:leading-[1.1]">
               Ready when you are. Call Nick today.
             </h2>
             <div className="keyline mt-6 w-24" />

@@ -11,7 +11,7 @@ const points = [
 export default function About() {
   return (
     <section id="about" className="border-y border-white/10 bg-surface">
-      <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 py-24 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:py-32">
+      <div className="mx-auto grid max-w-[1400px] items-center gap-14 px-5 py-24 sm:px-8 lg:px-10 lg:grid-cols-[0.85fr_1.15fr] lg:py-32">
         <Reveal className="relative mx-auto w-full max-w-sm lg:max-w-none">
           <div className="overflow-hidden rounded-3xl border border-white/10">
             <Image
@@ -35,7 +35,7 @@ export default function About() {
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-accent">
               About Nick
             </p>
-            <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+            <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-[clamp(2.75rem,3.2vw,3.75rem)] lg:leading-[1.1]">
               The electrician your neighbours recommend.
             </h2>
             <div className="keyline mt-6 w-24" />

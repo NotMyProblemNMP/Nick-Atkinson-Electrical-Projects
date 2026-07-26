@@ -11,7 +11,7 @@ export default function WhyChooseUs() {
 
   return (
     <section id="why-us" className="border-y border-white/10 bg-surface">
-      <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:py-32">
+      <div className="mx-auto max-w-[1400px] px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
         <div className="grid gap-16 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <SectionHeading

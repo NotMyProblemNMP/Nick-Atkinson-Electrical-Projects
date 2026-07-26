@@ -8,7 +8,7 @@ export default function Process() {
   const reduce = useReducedMotion();
 
   return (
-    <section id="process" className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:py-32">
+    <section id="process" className="mx-auto max-w-[1400px] px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
       <SectionHeading
         eyebrow="How it works"
         title="The process is simple. Here's what to expect."

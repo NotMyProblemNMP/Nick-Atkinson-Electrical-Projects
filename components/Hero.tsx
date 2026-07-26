@@ -26,18 +26,18 @@ export default function Hero() {
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(245,185,66,0.06),transparent_55%)]"
       />
 
-      <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 pb-20 pt-32 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:pb-28 lg:pt-44">
+      <div className="mx-auto grid max-w-[1400px] items-center gap-14 px-5 pb-20 pt-32 sm:px-8 lg:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:pb-28 lg:pt-44">
         <div>
           <motion.h1
             {...fade(0.1)}
-            className="font-display text-4xl font-semibold leading-[1.06] tracking-tight text-foreground sm:text-5xl lg:text-6xl"
+            className="font-display text-4xl font-semibold leading-[1.06] tracking-tight text-foreground sm:text-5xl lg:text-[clamp(3.75rem,4.8vw,5.5rem)]"
           >
             Electrical services across Newcastle upon Tyne.
           </motion.h1>
 
           <motion.p
             {...fade(0.25)}
-            className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg"
+            className="mt-6 max-w-2xl text-base leading-relaxed text-muted sm:text-lg lg:text-xl"
           >
             Nick Atkinson Electrical Projects is a NAPIT-approved electrician
             based in {site.base}, serving homes and commercial premises across
