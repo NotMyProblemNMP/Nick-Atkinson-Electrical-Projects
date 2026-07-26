@@ -22,6 +22,8 @@ export const site = {
     "Wallsend",
     "Newcastle upon Tyne",
     "Gateshead",
+    "Washington",
+    "Sunderland",
     "Blyth",
     "Bedlington",
     "Cramlington",
