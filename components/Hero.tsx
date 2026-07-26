@@ -40,8 +40,8 @@ export default function Hero() {
             className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg"
           >
             Nick Atkinson Electrical Projects is a NAPIT-approved electrician
-            based in {site.base}, serving Newcastle upon Tyne and the wider
-            North East. Covering all electrical projects, maintenance and
+            based in {site.base}, serving homes and businesses across the
+            wider North East. Covering all electrical projects, maintenance and
             inspections including rewires, lighting designs, smart home
             installations and more. All fully insured, guaranteed and
             certified.

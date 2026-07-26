@@ -16,8 +16,8 @@ export default function Footer() {
             />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted">
               NAPIT-approved electrician in {site.base}, delivering premium
-              domestic and commercial electrical projects across Newcastle upon
-              Tyne and the North East of England.
+              domestic and commercial electrical projects across Tyne and
+              Wear and the North East of England.
             </p>
           </div>
 

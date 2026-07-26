@@ -8,7 +8,7 @@ export const site = {
   phone: "+447000000000", // placeholder
   phoneDisplay: "07000 000000", // placeholder
   email: "hello@nickatkinsonelectricalprojects.co.uk", // placeholder
-  base: "North Shields",
+  base: "Newcastle upon Tyne",
   region: "Tyne and Wear",
   rating: "9.99",
   reviewCount: 63,

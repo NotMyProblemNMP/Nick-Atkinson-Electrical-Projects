@@ -13,7 +13,7 @@ export function buildJsonLd() {
     url: site.url,
     telephone: site.phone,
     email: site.email,
-    description: `NAPIT-approved electrician based in ${site.base}, covering Newcastle upon Tyne and the North East of England. Domestic and commercial electrical projects including rewires, lighting design, EICR testing and smart home installation.`,
+    description: `NAPIT-approved electrician based in ${site.base}, covering Tyne and Wear and the North East of England. Domestic and commercial electrical projects including rewires, lighting design, EICR testing and smart home installation.`,
     image: `${site.url}/images/hero-garden.jpg`,
     priceRange: "££",
     address: {

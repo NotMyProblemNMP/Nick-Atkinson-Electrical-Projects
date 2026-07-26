@@ -13,22 +13,23 @@ const grotesk = Space_Grotesk({
   subsets: ["latin"],
 });
 
-const description = `NAPIT-approved electrician in ${site.base}, covering Newcastle upon Tyne and the North East. Rewires, lighting design, EICR testing, kitchen & bathroom electrics, garden lighting and smart home installation. Rated ${site.rating}/10 from ${site.reviewCount} verified Checked & Vetted reviews. Free quotes.`;
+const description = `NAPIT-approved electrician in ${site.base}, covering Tyne and Wear and the North East. Rewires, lighting design, EICR testing, kitchen & bathroom electrics, garden lighting and smart home installation. Rated ${site.rating}/10 from ${site.reviewCount} verified Checked & Vetted reviews. Free quotes.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} | Electrician in North Shields & Newcastle`,
+    default: `${site.name} | Electrician in Newcastle upon Tyne`,
     template: `%s | ${site.name}`,
   },
   description,
   keywords: [
-    "electrician North Shields",
     "electrician Newcastle upon Tyne",
+    "electrician Newcastle",
     "electrician North East",
+    "electrician North Shields",
     "electrical contractor Tyne and Wear",
     "house rewire Newcastle",
-    "EICR North Shields",
+    "EICR Newcastle",
     "consumer unit upgrade",
     "garden lighting installation",
     "NAPIT approved electrician",
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} | Electrician in North Shields & Newcastle`,
+    title: `${site.name} | Electrician in Newcastle upon Tyne`,
     description,
   },
   robots: {
