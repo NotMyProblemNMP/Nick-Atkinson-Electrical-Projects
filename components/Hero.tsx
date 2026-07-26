@@ -40,11 +40,11 @@ export default function Hero() {
             className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg"
           >
             Nick Atkinson Electrical Projects is a NAPIT-approved electrician
-            based in {site.base}, serving homes and businesses across the
-            wider North East. Covering all electrical projects, maintenance and
-            inspections including rewires, lighting designs, smart home
-            installations and more. All fully insured, guaranteed and
-            certified.
+            based in {site.base}, serving homes and commercial premises across
+            the wider North East. Covering all electrical projects,
+            maintenance and inspections including rewires, lighting designs,
+            smart home installations and more. All fully insured, guaranteed
+            and certified.
           </motion.p>
 
           <motion.div {...fade(0.35)} className="mt-9 flex flex-wrap gap-4">
