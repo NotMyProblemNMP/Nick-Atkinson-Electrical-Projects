@@ -2,7 +2,6 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { featuredReviews, scoreBreakdown } from "@/lib/data";
-import { site } from "@/lib/site";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 
@@ -45,23 +44,6 @@ export default function WhyChooseUs() {
                   </div>
                 ))}
               </div>
-              <a
-                href={site.checkedAndVettedUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-accent transition-colors hover:text-accent-strong"
-              >
-                See the full profile on Checked &amp; Vetted
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  className="h-4 w-4"
-                >
-                  <path strokeLinecap="round" d="M7 17 17 7m0 0H8m9 0v9" />
-                </svg>
-              </a>
             </Reveal>
           </div>
 
